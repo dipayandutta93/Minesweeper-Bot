@@ -4,6 +4,7 @@ Designed a minesweeper bot that makes moves based on solving a constraint satisf
 We represented the board in the form of a matrix, where cells with mine is given a value 1 and non-mine cells are assigned 0.
 
 We represent each constraint with the following data structure
+    
     Constraint{
     List variables;
     Int value;
