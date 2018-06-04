@@ -19,4 +19,5 @@ We represent the knowledge in the following forms:
 Our program checks the safe cells list, if it is not empty, then those cells are explored next. We infer safe cells by using the knowledge accumulated. If there are no elements in safe cell list, then our program chooses a cell which has minimum probability to be mine (first we consider the cells which are already in the constraints). If there is a tie between cells we choose the cell that is more connected to the knowledge base (most constrained cell).As we don’t have much knowledge about the board, we need to make a move within theknown region unless all the known region is filled with mines. However, a complete random move might not be logical. Hence, our program makes sure that the next move it makes is an optimal one by choosing the cell with minimum probability in the known region.
 
 Space complexity : O(n^2)
+
 Time complexity : O(n^3)
